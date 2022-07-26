@@ -115,15 +115,18 @@ img{
 }
 
 .section-container{
-    margin-top: 5em;
+    /* margin-top: 5em; */
+    margin: 0 auto;
     border-radius: 15px;
     background-color: #172339;
 }
 
 .section-container img{
-    position: relative;
-    bottom: 4em;
-    left: 2em;
+    /* position: relative; */
+    /* bottom: 4em;
+    left: 2em; */
+    display: flex;
+    margin: 2em auto;
 }
 
 .section-container h1{
@@ -136,14 +139,18 @@ img{
     color: white;
     margin-inline-start: 2em;
     line-height: 2;
+    margin-block-end: 3em;
     margin-block-start: 2em;
+    text-align: center;
 }
 
 .section-container small {
     color: white;
-    margin-inline-start: 2em;
+    /* margin-inline-start: 2em; */
     line-height: 2;
-    margin-block-start: 5em;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-block-start: 5em; */
 }
 
 /* Until next time */
