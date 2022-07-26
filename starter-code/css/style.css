@@ -27,6 +27,7 @@ body{
 
 .navbar__button{
     font-weight: bold;
+        transition: background-color 400ms ease;
     border: 1px solid currentColor;
     color: black;
     padding: 1.2em;
@@ -82,7 +83,7 @@ img{
 
 .container__image{
     height: 240px;
-    width: 343px;
+    width: auto;
     margin-block-start: 4em;
 }
 
@@ -115,26 +116,31 @@ img{
 }
 
 .section-container{
-    /* margin-top: 5em; */
-    margin: 0 auto;
+    margin-top: 12em;
+    margin-bottom: 5em;
+    margin-inline: auto;
     border-radius: 15px;
     background-color: #172339;
 }
 
 .section-container img{
-    /* position: relative; */
-    /* bottom: 4em;
-    left: 2em; */
+    position: relative;
     display: flex;
-    margin: 2em auto;
+    margin: -9em auto;
 }
 
 .section-container h1{
     text-align: center;
     color: white;
     font-weight: 400;
+    margin-top: 4em;
 }
 
+
+.section-container svg{
+    display: flex;
+    margin: 2em auto;
+}
 .section-container p {
     color: white;
     margin-inline-start: 2em;
@@ -144,13 +150,161 @@ img{
     text-align: center;
 }
 
-.section-container small {
+.section-container small:first-of-type {
+    font-family: 'Epilogue', sans-serif;
     color: white;
-    /* margin-inline-start: 2em; */
-    line-height: 2;
-    margin: 0 auto;
     text-align: center;
-    /* margin-block-start: 5em; */
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
 }
 
-/* Until next time */
+.section-container small:last-of-type {
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: flex;
+    margin: 1em auto;
+    width: fit-content;
+}
+
+.flex-icons{
+    display: flex;
+    object-fit: contain;
+    gap: 2em;
+    align-items: center;
+}
+
+footer{
+    margin: 0 auto;
+}
+footer p{
+    margin-block: 2em;
+}
+
+footer img{
+    object-fit: contain;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.navbar__button--filled:hover{
+    background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+    transition: 500ms linear-gradient ease;
+}
+
+.navbar__button:hover{
+    transition: background-color 500ms ease;
+    background-color: black;
+    color: white;
+}
+@media screen and ( min-width: 768px ){
+    .container-content{
+        display: flex;
+    }
+
+    .flex-col{
+        justify-content: space-between;
+        margin-inline: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-container{
+        margin-inline: 2em;
+    }
+
+    .flex-row{
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        gap: 10em;
+    }
+
+    .container__image{
+        height: 12em;
+        width: auto;
+        margin-right: 2em;
+    }
+
+    .section-container svg{
+        margin: 12em 12em;
+        display: flex;
+    }
+}
+
+
+@media screen and ( min-width: 1024px ){
+    .flex-row{
+        gap: 27em;
+    }
+
+    .row{
+        margin-left: 2em;
+        display: flex;
+        gap: 2em;
+    }
+
+    .flex-col{
+        flex-direction: column;
+    }
+
+    .container__description{
+        position: relative;
+        z-index: 1;
+        margin-inline-start: 2em;
+        margin-inline-end: 7em;
+    }
+
+    .container__image{
+        right: 5em;
+        position: relative;
+        z-index: -1;
+    }
+
+    .container__title{
+        margin-inline-end: 6em;
+        margin-left: 1em; 
+    }
+
+    .navbar__button--filled{
+        margin-inline-start: 2em;
+    }
+
+    .navbar__logo{
+        margin-inline-start: 4em;
+    }
+
+    .section-container{
+        height: fit-content;
+        display: flex;
+    }
+
+    .section-container img{
+        object-fit: contain;
+        left: 4em;
+        bottom: 4em;
+    }
+
+    .section-container svg{
+        margin: 12em 4em;
+        display: flex;
+    }
+
+    .section-container div:last-child{
+        margin-inline-end: 2em;
+    }
+
+    .section-container h1{
+        margin-top: 2.5em;
+    }
+}
+
+
+
