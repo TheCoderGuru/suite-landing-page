@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+
+}
+
+body{
+    min-height: 100vh;
+    background-color: #FAF8F6;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    margin-inline: 2em;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+    margin-block: 2em;  
+}
+
+.navbar__button{
+    font-weight: bold;
+    border: 1px solid currentColor;
+    color: black;
+    padding: 1.2em;
+    border-radius: .3em;
+}
+
+.mb-2-5{
+    margin-block-start: 2.5em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2em;
+}
+
+.container__title{
+    margin-block-start: 2em;
+    padding-inline-end: 1em;
+    font-weight: 400;
+}
+
+.text-bold{
+    font-weight: 600;
+    color: #172339;
+}
+
+.text-bold-white{
+    font-weight: 600;
+    color: white;
+}
+
+.container__curved-line{
+    width: 151.47px;
+    height: 19px;
+    position: relative;
+    top: 3.5em;
+    margin-inline-start: 7em;
+}
+
+
+.container__description{
+    font-weight: 'Epilogue', sans-serif;
+    line-height: 1.5;
+    margin-block-start: 1em;
+    margin-block-end: 3em;
+}
+
+
+.container__image{
+    height: 240px;
+    width: 343px;
+    margin-block-start: 4em;
+}
+
+.navbar__button--filled{
+    font-weight: bold;
+    background-color: #172339;
+    color: white;
+    padding: 1.2em;
+    border-radius: .3em;
+}
+
+.flex-col{
+    margin-top: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+.flex-col span{
+    font-size: 2.25em;
+}
+
+.flex-col div{
+    margin-bottom: 2em;
+}
+
+.flex-col__item{
+    letter-spacing: .1em;
+    margin-top: 1em;
+}
+
+.section-container{
+    margin-top: 5em;
+    border-radius: 15px;
+    background-color: #172339;
+}
+
+.section-container img{
+    position: relative;
+    bottom: 4em;
+    left: 2em;
+}
+
+.section-container h1{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.section-container p {
+    color: white;
+    margin-inline-start: 2em;
+    line-height: 2;
+    margin-block-start: 2em;
+}
+
+.section-container small {
+    color: white;
+    margin-inline-start: 2em;
+    line-height: 2;
+    margin-block-start: 5em;
+}
+
+/* Until next time */
